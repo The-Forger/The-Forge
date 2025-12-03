@@ -1,6 +1,6 @@
 local forgehelp = {}
 local warn = function(...) warn("[FORGEHELP] >",...)
-local encode = function(...) return game:GetService("HttpService"):JSONEncode(...) end
+local encode = function(a) return game:GetService("HttpService"):JSONEncode(a) end
 
 forgehelp.swing = function(...)
   local args = ...
