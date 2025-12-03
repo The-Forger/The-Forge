@@ -2,7 +2,7 @@ local forgehelp = {}
 
 forgehelp.swing = function(...)
   local args = ...
-  warn(" {FORGEHELP MODULE} module.swing > ",game:GetService("HttpService"):JSONEncode(args))
+  warn(" {FORGEHELP MODULE} module.swing > ",game:GetService("HttpService"):JSONEncode(args),"typeof value parsed:",typeof(args))
   
   if not typeof(args)=="table" then return end if args[2] then return end
   if args[1]==1 then args[1]="Pickaxe" end
