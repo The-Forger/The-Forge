@@ -9,7 +9,6 @@ forgehelp.swing = function(...)
   if not typeof(args)=="table" then return end if #args>1 or #args==0 then return end
   if args[1]==2 then args[1]="Weapon" end
   if args[1]==1 then args[1]="Pickaxe" end
-  if args[1]>2 or args[1]<1 then args[1]="Pickaxe" end
   game:GetService("ReplicatedStorage"):WaitForChild("Shared"):WaitForChild("Packages"):WaitForChild("Knit"):WaitForChild("Services"):WaitForChild("ToolService"):WaitForChild("RF"):WaitForChild("ToolActivated"):InvokeServer(unpack(args))
 end
 
