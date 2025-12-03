@@ -2,6 +2,8 @@ local forgehelp = {}
 
 forgehelp.swing = function(...)
   local args = ...
+  warn(" {FORGEHELP MODULE} module.swing > ",args)
+  
   if not typeof(args)=="table" then return end if args[2] then return end
   if args[1]==1 then args[1]="Pickaxe" end
   if args[1]==2 then args[1]="Weapon" end
